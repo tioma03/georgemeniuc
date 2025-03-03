@@ -1,0 +1,2 @@
+# georgemeniuc
+a school website 
