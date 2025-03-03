@@ -1,0 +1,523 @@
+body{
+    background-color:whitesmoke;
+    -webkit-user-select: none; /* For Chrome, Safari, and Opera */
+      -moz-user-select: none;    /* For Firefox */
+      -ms-user-select: none;     /* For Internet Explorer/Edge */
+      user-select: none;         /* For modern browsers */
+    
+}
+.fc {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  /* Calendar Header */
+  .fc-toolbar {
+    background: #4A90E2;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .fc-button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .fc-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Days Grid */
+  .fc-daygrid-day-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4A90E2;
+  }
+
+  .fc-daygrid-day {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .fc-daygrid-day:hover {
+    background-color: #f1f1f1;
+  }
+
+  .fc-daygrid-day.fc-day-today {
+    background-color: #4A90E2;
+    color: white;
+  }
+
+  /* Event Styling */
+  .fc-event {
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+
+  .fc-event:hover {
+    background-color: #357ABD;
+  }
+
+  /* Week Numbers */
+  .fc-col-header-cell.fc-week {
+    background: #e1e1e1;
+    font-weight: bold;
+  }
+.head-line{
+    width: 100%;
+    height: 10px;
+    background-color: #028a1f;
+    position: fixed;
+    z-index: 99999;
+    scale: 0 1;
+    animation: progress linear;
+    animation-timeline: scroll();
+}
+#chatbot-container {
+    position: fixed;
+    bottom: 75px;
+    right: 5px;
+    z-index: 999999;
+}
+
+#chatbot {
+    width: 300px;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+#chatbox {
+    height: 200px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#question-buttons button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#question-buttons button:hover {
+    background: #0056b3;
+}
+
+#chatbot-toggle {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+@keyframes progress {
+    to{scale: 1 1;}
+}
+#preload-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 1000;
+    pointer-events: none;
+}
+#loading-circle img{
+    width: 100px;
+}
+#loading-circle {
+  
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+#content {
+    display: none;
+    pointer-events: auto;
+}
+.logo{
+    width: 120px;
+}
+.social-icons {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.social-icons i {
+    margin-left: 3px;
+    font-size: 24.5px;
+   
+} 
+
+.social-icons .last-i{
+    margin-left: 20px;
+    color: black;
+    
+}
+
+header {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header i {
+    font-size: 24px; /* Icon size */
+    margin-right:13px; /* Space between icon and text */
+    color: #ff9800; /* Custom color for the location icon */
+}
+
+header p {
+    margin: 0 0 0 2px; /* Margin between icon and text */
+    font-size: 16px; /* Font size */
+}
+.box{
+    display: flex;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box:nth-of-type(1){
+    transform: translateX(-25px);
+}
+.box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#first{
+    background-image: url('img/bgprofesori.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 1050px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.big-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#data {
+    padding: 50px 0; /* Add padding as needed */
+    text-align: center; /* Center align text */
+    width: 87.4%;
+    height: auto;
+    margin-top: 10px;
+}
+.container-data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-data {
+    background-color: #fff; /* Set a background color as needed */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.box-data:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.box-data i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box-data span {
+    font-size: 16px;
+    color: #6c757d; /* Set a text color as needed */
+}
+#director {
+    background-color: whitesmoke;
+    width: 87.4%;
+    margin-left: 6.3%;
+    margin-right:6.3%;
+    margin-top: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 35%;
+}
+
+.container-director {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-director img {
+    width: 100%; /* Use a relative width for responsiveness */
+    height: auto;
+    max-width: 380px; /* Set a maximum width to prevent the image from becoming too large */
+    margin: 10px;
+    object-fit: contain;
+    border-radius: 15%;
+}
+
+.paragraf {
+    flex: 1;
+    margin: 10px 220px;
+    text-align: justify;
+}
+
+.r-side {
+    text-align: right;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#details{
+    margin-top: 10px;
+    
+    
+   
+}
+
+#details img{
+    width: 250px;
+    height: 226px;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 295px;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 30px;
+  }
+footer{
+    margin-top: 160px;
+}
+footer li{
+    list-style: none;
+}
+.phone-foot{
+    text-decoration: none;
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+}
+footer span {
+    margin-left: 3px;
+}
+.foot-links h6{
+    transform: translateX(10px);
+}
+.social-links-footer {
+    transform: translateX(12px);
+}
+
+/* Style for the select element */
+#classFilter {
+    width: 37%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 15px; /* Adjust the border radius as needed */
+    background-color: #f8f9fa;
+    color: #495057;
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    appearance: none;
+}
+
+
+/* Style for the option items */
+#classFilter option {
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box-contact{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 60px;
+    object-fit: cover;
+    text-align: center;
+}
+.box-contact a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.box-contact i{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.contact-container-2{
+    margin-top: 120px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(100, 245, 3); /* sau culoarea dorită */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+   
+  }
+  .circle i{
+    position: relative;
+    left: 0px;
+    top: 2px;
+    font-size: 20px;
+  }
+  @media screen and (max-width:320px){
+    header .box p{
+        font-size: 11.5px;
+    }
+    .social-links-footer {
+        transform: translateX(2px);
+    }
+  }
+  
+@media  (max-width:767px) {
+    #calendar {
+        width: 100%;
+        padding: 10px;
+    }
+    .fc-toolbar-title {
+        font-size: 16px; /* Reduce title size */
+    }
+    .box-contact a{
+        font-size: 16.5px;
+    }
+    #director{
+        border-radius: 50px;
+    }
+    #classFilter{
+        width: 80%;
+        font-size: 13.5px;
+    }
+    .contact-container{
+        flex-direction: column;
+        margin-top: 22px;
+    }
+    iframe{
+        width: 100%;
+    }
+    .box-contact{
+        margin-top: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        text-align: center;
+    }
+   #first{
+    background-size: contain;
+    height: 40vh;
+   }
+   .box p{
+    font-size: 13px;
+   }
+   .box i{
+    font-size: 15px;
+   }
+   .logo{
+    width: 80px;
+   }
+   #data{
+    width: 100%;
+   }
+   .paragraf {
+    margin: 20px; /* Adjust margins for smaller screens */
+}
+
+.box-director img {
+    max-width: 100%; /* Ensure the image takes up the full width on smaller screens */
+}
+}
+@media  (orientation: landscape) {
+    #first {
+        background-size: contain;
+        
+    }
+    #classFilter{
+        width: 50%;
+        font-size: 15.5px;
+    }
+    .box-contact{
+        margin-top: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

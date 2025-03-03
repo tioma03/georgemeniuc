@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ByschoIT">
+        <meta name="description" content="Liceul Teoretic George Meniuc">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Noutăți</title>
+    </head>
+    <div class="head-line"></div>
+    <header class="d-flex align-items-center justify-content-center">
+        <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+        <p>Albișoara 84</p>
+        </div>
+      <div class="box">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:022291700"><p>022-291-700</p></a>
+      </div>
+    </header>
+    
+<body>
+    <div id="preload-container">
+        <div id="loading-circle"><img src="img/logo.png" class="fa-beat-fade" alt=""></div>
+    </div>
+    <div id="content">
+        <div class="circle fa-fade">
+            <a href="tel:022291700"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
+          </div>
+          <div id="chatbot-container">
+            <button id="chatbot-toggle" onclick="toggleChatbot()">💬 Chat</button>
+            <div id="chatbot">
+                <div id="chatbox">
+                    <p><strong>Bot:</strong> Salut! Alege o întrebare:</p>
+                </div>
+                <div id="question-buttons">
+                    <button onclick="sendMessage('Care este adresa liceului?')">📅 Care este adresa Liceului?</button>
+                    <button onclick="sendMessage('Cum pot găsi informații despre membrii liceului?')">👨‍🏫 Cum iau legătura cu un profesor?</button>
+                    <button onclick="sendMessage('Când sunt vacanțele?')">🏖️ Când sunt vacanțele?</button>
+                </div>
+            </div>
+        </div>
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto text-center fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Acasă</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link active" href="noutati.html">Noutăți</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="vacante.html">Vacanțe 2025</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Membrii
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="administratie.html">Administrație</a></li>
+                            <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+                            <li><a class="dropdown-item" href="senat.html">Senatul Elevilor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte.html">Contacte</a>
+                    </li>
+                </ul>
+                <ul class="social-icons list-unstyled ml-3 mt-4 justify-content-center">
+                    <li class="me-3"><a href="https://www.instagram.com/liceul.georgemeniuc/" target="_blank"><i class="fa-brands fa-instagram" style="color: pink;"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100090348895661" target="_blank"><i class="fa-brands fa-facebook" style="color: blue;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Card-NOUTATI-MORE-->
+    <section id="details">
+        <center><h3>Noutăți</h3><hr style="width: 4%; color: brown; border: 3px solid red;"></center>
+        <div class="container mt-4">
+            <div class="row row-cols-1 cols-sm-2 row-cols-md-4 g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100">
+                       <a href="img/2fotoliu.png" class="d-flex justify-content-center"> <img src="img/2fotoliu.png" class="card-img-top mx-auto" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Concursul „Doi într-un fotoliu”, ediția a XXIII-a</h5><hr>
+                            <p class="card-text">În preajma Dragobetelui, în care iubirea plutește în aer și inimile se contopesc într-un dans al sentimentelor, Liceul Teoretic „George Meniuc” a organizat concursul „Doi într-un fotoliu”, ediția a XXIII-a, cu genericul „Dacă dragoste nu e, nimic nu e”. ❤️
+
+                                Fotoliul dragostei a devenit martorul unei competiții pasionale, iar cei care au câștigat inimile noastre și ale juriului sunt Ilașcu Daniil și Buhnaci Delia. Acești doi îndrăgostiți au reușit să transforme un simplu loc într-un tron al iubirii, dovedind că dragostea înflorește în cele mai neașteptate locuri. 💘
+                                
+                                Felicităm toți participanții pentru prestația lor! 🎉</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Publicat: 02.03.2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100">
+                       <a href="img/holocaust.jpg" class="d-flex justify-content-center"> <img src="img/holocaust.jpg" class="card-img-top mx-auto" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Ziua Internațională de comemorare a <strong>Holocaustului</strong></h5> <hr>
+                            <p class="card-text">Pe 27 ianuarie, Liceul Teoretic ,,George Meniuc” a comemorat Holocaustul, o zi solemnă dedicată amintirii victimelor și reflectării asupra consecințelor tragice. Să ne angajăm să nu uităm niciodată și să construim un viitor bazat pe înțelegere și toleranță. 🕊️🕯️</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Publicat: 10.02.2024</small>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                   <a href="img/colabrec.png" class="d-flex justify-content-center"> <img src="img/colabrec.png" class="card-img-top mx-auto" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Recycline în Colaborare cu Liceul Teoretic "George Meniuc"!</h5><hr>
+                        <p class="card-text">Pe data de 29.01.2024, liceul nostru în colaborare cu startup-ul de impact <strong><a href="https://www.instagram.com/recycline_/?img_index=1" style="color: red;">@recycline_ </a></strong> a organizat o inițiativă pentru a promova reciclarea și reducerea impactului deșeurilor de plastic. 🗑️♻️
+
+                          Recycline este un startup de impact bazat pe tehnologia Waste2Product. În termeni simpli, ei transformă plasticul din deșeuri de tip 2 și 5 în produse de design printr-un proces tehnologic complex.  
+  
+                        
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Publicat: 29.01.2024</small>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100">
+                       <a href="img/olimpgeo.jpg" class="d-flex justify-content-center"> <img src="img/olimpgeo.jpg" class="card-img-top mx-auto" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Rezultatele la Olimpiada de Geografie!</h5>
+                            <p class="card-text">🏆Școala se mândrește cu ai săi discipoli... <br><hr>
+                                <strong>Strati Patricia</strong> <small>Locul I</small> <br>
+                        
+                                <strong>Corj Andreea</strong> <small>Locul I</small> <br>
+                                <strong>Popov Andrei</strong> <small>Locul I</small><br>
+                                <strong>Mardari Andrei</strong > <small>Locul I</small><br>
+                                <strong>Tașca Tatiana</strong> <small>Locul I</small><br>
+                                <strong>Mursa Beatrice</strong> <small>Locul I</small><br><hr>
+                                <strong>Odovenco Donatela</strong> <small>Locul II</small><br><hr>
+                                <strong>Cara Nicoleta</strong> <small>Locul III</small><br><hr>
+                                <strong>Obreja Valeria</strong > <small>Mențiune</small><br>
+                                <strong>Stolbatiuc Iulia</strong> <small>Mențiune</small><br>
+                                <strong>Rotari Laurențiu</strong> <small>Mențiune</small><br>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-body-secondary">Publicat: 27.01.2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card h-100">
+                     <a href="img/english.jpg" class="d-flex justify-content-center"> <img src="img/english.jpg" class="card-img-top mx-auto" alt="..."></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Rezultatele la Olimpiada de Limba Engleză!</h5>
+                          <p class="card-text">📚Stimularea potențialului creativ, valorificarea cunoștințelor și imaginației distinctive în cunoașterea culturii și civilizației limbii engleze s-a dovedit a fi o provocare reușită pentru Andronachi Mihail, elevul clasei a XI-a „A” și Mardari Vlada, eleva clasei a X-a „A”, care au promovat valori lingvistice în cadrul olimpiadei la Limba engleză, etapa de sector. <br>
+                            🎉🎉🎉Felicitări🎉🎉🎉 <br> <hr>
+                          <strong>Andronache Mihai</strong> <small>Locul II</small> <br>
+                           <strong>Mardari Vlada</strong> <small>Mențiune</small><br>
+                          
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-body-secondary">Publicat: 26.01.2024</small>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="card h-100">
+                     <a href="img/BACIU.jpg" class="d-flex justify-content-center"> <img src="img/BACIU.jpg" class="card-img-top mx-auto" alt="..."></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Întâlnire de suflet cu academicianul <strong>Gheorghe Baciu</strong></h5>
+                          <p class="card-text"> Autorul mai multor volume ce trezesc un viu interes atât în Republica Moldova, cât și dincolo de hotarele ei.
+                            Domnia sa le-a povestit elevilor despre cărțile scrise  nu din domeniul medicinii dar din literatură, dumnealui fiind și un bun cercetător al multor personalități date uitării.</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-body-secondary">Publicat: 25.01.2024</small>
+                      </div>
+                  </div>
+              </div>
+
+
+         
+            </div>
+            <nav class="mt-5 d-flex justify-content-center" aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="noutati.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item "><a class="page-link" href="noutati-2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="noutati-3.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="noutati-2.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        
+        </div>
+        
+    </section>
+     <!-- Footer -->
+     <footer
+     class="text-center text-lg-start text-white"
+     style="background-color: #929fba"
+     >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+ <!-- Section: Links -->
+ <section class="">
+   <!--Grid row-->
+   <div class="row">
+     <!-- Grid column -->
+     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+       <h6 class="text-uppercase mb-4 font-weight-bold">
+        Liceul Teoretic "George Meniuc"
+       </h6>
+       <p>
+         Este o comunitate educativă dedicată excelenței academice și dezvoltării personale. Promovăm tradiția, inovația și valorile, contribuind la formarea unor viitori lideri.
+       </p>
+     </div>
+     <!-- Grid column -->
+
+     <hr class="w-100 clearfix d-md-none" />
+
+     <!-- Grid column -->
+     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 links">
+       <h6 class="text-uppercase mb-4 font-weight-bold">Pagini</h6>
+       <p>
+         <a href="index.html"  class="text-white">Acasă</a>
+       </p>
+       <p>
+         <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Membrii
+             </a>
+             <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="administratie.html">Administrație</a></li>
+                 <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+                 <li><a class="dropdown-item" href="senat.html">Senatul Elevilor</a></li>
+             </ul>
+         </li>
+       </p>
+       <p>
+         <a href="contacte.html" class="text-white">Contacte</a>
+       </p>
+     </div>
+     <!-- Grid column -->
+
+     <hr class="w-100 clearfix d-md-none" />
+
+     <!-- Grid column -->
+     <hr class="w-100 clearfix d-md-none" />
+
+     <!-- Grid column -->
+     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foot-links">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p><i class="fas fa-home mr-3"></i><span>Chișinău,Albișoara 84</span></p>
+        <p><i class="fas fa-envelope mr-3"></i><span>liceulgeorgemeniuc@gmail.com</span></p>
+        <p><i class="fas fa-phone mr-3"></i> <a href="tel:022291700" class="phone-foot">022-291-700</a></p>
+      </div>
+     <!-- Grid column -->
+
+     <!-- Grid column -->
+     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+       <h6 class="text-uppercase mb-4 font-weight-bold">Urmărește-ne:</h6>
+<div class="social-links-footer">
+       <!-- Facebook -->
+       <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #3b5998"
+                     href="https://www.facebook.com/profile.php?id=100090348895661"
+                     role="button"
+                      target="_blank"><i class="fab fa-facebook-f"></i
+                    ></a>
+
+
+       <!-- Instagram -->
+       <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: rgb(221, 168, 177)"
+          href="https://www.instagram.com/liceul.georgemeniuc/"
+          role="button"
+          ><i class="fab fa-instagram"></i
+         ></a>
+     </div>
+   </div>
+   <!--Grid row-->
+ </section>
+ <!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © <span id="currentYear"></span> Copyright:
+    <a class="text-white" href="https://www.instagram.com/artiom_mn/">T8</a>
+</div>
+
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<script src="main.js"></script>
+</html>

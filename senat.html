@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ByschoIT">
+        <meta name="description" content="Liceul Teoretic George Meniuc">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Senatul Elevilor</title>
+    </head>
+    <div class="head-line"></div>
+    <header class="d-flex align-items-center justify-content-center">
+        <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+        <p>Albișoara 84</p>
+        </div>
+      <div class="box">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:022291700"><p>022-291-700</p></a>
+      </div>
+    </header>
+<body style="background-color: whitesmoke;">
+    <div id="preload-container">
+        <div id="loading-circle"><img src="img/logo.png" class="fa-beat-fade" alt=""></div>
+    </div>
+    <div id="content">
+        
+        <div class="circle fa-fade">
+            <a href="tel:022291700"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
+          </div>
+          <div id="chatbot-container">
+            <button id="chatbot-toggle" onclick="toggleChatbot()">💬 Chat</button>
+            <div id="chatbot">
+                <div id="chatbox">
+                    <p><strong>Bot:</strong> Salut! Alege o întrebare:</p>
+                </div>
+                <div id="question-buttons">
+                    <button onclick="sendMessage('Care este adresa liceului?')">📅 Care este adresa Liceului?</button>
+                    <button onclick="sendMessage('Cum pot găsi informații despre membrii liceului?')">👨‍🏫 Cum iau legătura cu un profesor?</button>
+                    <button onclick="sendMessage('Când sunt vacanțele?')">🏖️ Când sunt vacanțele?</button>
+                </div>
+            </div>
+        </div>
+     <!---Navbar-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto text-center fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Acasă</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="noutati.html">Noutăți</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="vacante.html">Vacanțe 2025</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Membrii
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="administratie.html">Administrație</a></li>
+                            <li><a class="dropdown-item " href="profesori.html">Profesori</a></li>
+                            <li><a class="dropdown-item active" href="senat.html">Senatul Elevilor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contacte.html">Contacte</a>
+                    </li>
+                </ul>
+                <ul class="social-icons list-unstyled ml-3 mt-4 justify-content-center">
+                    <li class="me-3"><a href="https://www.instagram.com/liceul.georgemeniuc/" target="_blank"><i class="fa-brands fa-instagram" style="color: pink;"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100090348895661" target="_blank"><i class="fa-brands fa-facebook" style="color: blue;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--CONTANCTELE SCOLII-->
+<center style="background-color: whitesmoke;margin-top: 30px;">
+    <h2>Senatul Elevilor</h2><hr style="width: 4%; border: 3px solid red;">
+    <div class="container mt-4">
+        <div class="row row-cols-1 cols-sm-2 row-cols-md-4 g-3">
+           
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <img src="img/vladaS.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sîrghi Vlada</h5>
+                        <p class="card-text">Președinte</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Președinte</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <img src="img/alhelalug.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alhelal Lugein</h5>
+                        <p class="card-text">Coordonator al Departamentului Organizare</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Organizare</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100">
+                    <img src="img/corjandreea.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Corj Andreea</h5>
+                        <p class="card-text">Coordonatoarea Departamentului de Relații Externe</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Relații Externe</small>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    
+    </div>
+</center>
+      <!-- Footer -->
+      <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #929fba"
+      >
+ <!-- Grid container -->
+ <div class="container p-4 pb-0">
+  <!-- Section: Links -->
+  <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+         Liceul Teoretic "George Meniuc"
+        </h6>
+        <p>
+          Este o comunitate educativă dedicată excelenței academice și dezvoltării personale. Promovăm tradiția, inovația și valorile, contribuind la formarea unor viitori lideri.
+        </p>
+      </div>
+      <!-- Grid column -->
+ 
+      <hr class="w-100 clearfix d-md-none" />
+ 
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 links">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Pagini</h6>
+        <p>
+          <a href="index.html"  class="text-white">Acasă</a>
+        </p>
+        <p>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Membrii
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="administratie.html">Administrație</a></li>
+                  <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+                  <li><a class="dropdown-item" href="senat.html">Senatul Elevilor</a></li>
+              </ul>
+          </li>
+        </p>
+        <p>
+          <a href="contacte.html" class="text-white">Contacte</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+ 
+      <hr class="w-100 clearfix d-md-none" />
+ 
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none" />
+ 
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 foot-links">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p><i class="fas fa-home mr-3"></i><span>Chișinău,Albișoara 84</span></p>
+        <p><i class="fas fa-envelope mr-3"></i><span>liceulgeorgemeniuc@gmail.com</span></p>
+        <p><i class="fas fa-phone mr-3"></i> <a href="tel:022291700" class="phone-foot">022-291-700</a></p>
+      </div>
+      <!-- Grid column -->
+ 
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Urmărește-ne:</h6>
+ <div class="social-links-footer">
+        <!-- Facebook -->
+        <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #3b5998"
+                      href="https://www.facebook.com/profile.php?id=100090348895661"
+                      role="button"
+                       target="_blank"><i class="fab fa-facebook-f"></i
+                     ></a>
+ 
+ 
+        <!-- Instagram -->
+        <a
+           class="btn btn-primary btn-floating m-1"
+           style="background-color: rgb(221, 168, 177)"
+           href="https://www.instagram.com/liceul.georgemeniuc/"
+           role="button"
+           ><i class="fab fa-instagram"></i
+          ></a>
+      </div>
+    </div>
+    <!--Grid row-->
+  </section>
+  <!-- Section: Links -->
+ </div>
+ <!-- Grid container -->
+ 
+ <!-- Copyright -->
+ <!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © <span id="currentYear"></span> Copyright:
+    <a class="text-white" href="https://www.instagram.com/artiom_mn/">T8</a>
+</div>
+
+ <!-- Copyright -->
+ </footer>
+ <!-- Footer -->
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+<script src="main.js"></script>
+</html>
